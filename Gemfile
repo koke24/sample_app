@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
+# sass-rails have to be before rails to avoid coffee-rails/railties
+# dependency error
+gem 'sass-rails', '4.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
@@ -21,7 +24,6 @@ group :test do
   gem 'factory_girl_rails', '4.2.1'
 end
 
-gem 'sass-rails', '4.0.0'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.0'
 gem 'jquery-rails', '2.2.1'
